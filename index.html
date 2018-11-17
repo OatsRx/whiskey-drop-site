@@ -37,7 +37,7 @@
         <div class="row hidden-xs">
             <div class="col-xs-12">
                 <div class="alert alert-warning">
-                    <strong>Sale Now On!</strong>We've got a sale on. Get a 12 month subscription for the price of 6! <a href="">See here for more details</a> 
+                    <strong>Sale Now On!</strong>We've got a sale on. Get a 12 month subscription for the price of 6! <a href="">See here for more details</a>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@
                 <section class="callout jumbotron text-center">
                     <h1>The finest whiskey delivered to your doorstep.</h1>
                     <p class="lead">Sign up today to start receiving the worlds best whiskey every month. <s class="hidden-xs">£19.99</s><span class="visible-xs"><br></span><strong><mark>First ones free!</mark></strong></p>
-                    <p><button class="btn-lg btn-success">Sign Up!</button></p>
+                    <p><button class="btn-lg btn-success" data-toggle='modal' data-target='#signUpModal'>Sign Up!</button></p>
                     <p class="text-muted"><small>You must be over 18 to sign into our servivces. Please drink responsibly</small></p>
                 </section>
             </div>
@@ -78,21 +78,21 @@
                     </div>
                 </div>
                 <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <div class="media">
-                        <div class="media-left hidden-xs">
-                            <img src="images/man.jpg" class="img-circle media-object" height=100 width=100></img>
-                        </div>
-                        <div class="media-body">
-                            <blockquote class="quote">
-                                <p>I havent been sober for months!</p>
-                                <footer>Joe Bloggs on <cite title="Twitter">Twittier</cite></footer>
-                            </blockquote>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media">
+                            <div class="media-left hidden-xs">
+                                <img src="images/man.jpg" class="img-circle media-object" height=100 width=100></img>
+                            </div>
+                            <div class="media-body">
+                                <blockquote class="quote">
+                                    <p>I havent been sober for months!</p>
+                                    <footer>Joe Bloggs on <cite title="Twitter">Twittier</cite></footer>
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-            
+
+
         </section>
         <!-- /quotes -->
 
@@ -134,7 +134,39 @@
         <!-- /features -->
 
     </article>
+
+    <!-- Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Sign Up For Whiskey Drop!</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="Email" placeholder="Email">
+                            <p class="help-block">We'll never share your email with anyone!</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="Password" placeholder="Create Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRepeat">Repeat Password</label>
+                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign Up!</button>
+                    </form>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
