@@ -1,7 +1,7 @@
 # Bootstrap
 
 ## Description:
-Introduction and introduction to Bootstrap# whiskey-drop-site
+Introduction to Bootstrap  
 
 ## Project:
-To design a landing page for the non-existent whiskey subscription site Whiskey Drop.
+To design a landing page for the whiskey subscription site "Whiskey Drop".
