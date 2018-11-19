@@ -2,34 +2,73 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Containers */ 
+/* Navbar */
 
-.alert-container {
-    
+.navbar {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    border: 0;
 }
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background: transparent;
+}
+
+.navbar .navbar-brand:hover {
+    color: white;
+
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+/* Containers */
+
+.alert-container {}
 
 .callout-container {
     height: 100vh;
-    
-    background: url(../images/scotch.jpg) no-repeat center center fixed; 
+
+    background: url(../images/wd.PNG) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
+
     display: flex;
     align-items: center;
-    margin; auto;
-  
+    margin 0;
+
 }
 
-.quotes-container {
-    
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
-.features-container {
-    
-}
+/* Jumbotron */
 
 .jumbotron {
     background-color: transparent;
@@ -38,9 +77,56 @@ body {
 .jumbotron h1 {
     color: white;
     font-weight: bold;
-    margin-bottom: 30px;
 }
 
-.jumbotron lead {
-    
+.lead {
+    color: white;
+}
+
+
+p>small {
+    color: white;
+    margin: 25px 0;
+    font-style: italic;
+}
+
+
+
+.quotes-container {}
+
+.features-container {}
+
+
+
+/* block dividers */
+
+.block-divider {
+    background-color: #ffa500;
+    width: 30%;
+    height: 3px;
+    border-radius: 10px;
+}
+
+/* Buttons */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn--red {
+    color: white;
+    background-color: #ffa500;
+    border-color: #ffa500;
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    color: #ffa500;
+    background-color: #f0e68c;
+    border-color: #f0e68c;
+
 }
