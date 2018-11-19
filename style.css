@@ -2,22 +2,87 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Containers */
+
+.container-wrapper {}
+
+.container-wrapper--red {
+    background-color: #f05f40;
+    color: white;
+}
+
+.alert-container {}
+
+.callout-container {
+    height: 100vh;
+
+    background: url('../images/wd.PNG') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
 /* Navbar */
 
 .navbar {
-    margin: 0;
+    margin-bottom: 0;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, .25);
     border: 0;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border: 0;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
 }
 
 .navbar .navbar-brand {
     font-weight: bold;
     color: white;
+}
+
+.navbar .navbar-brand:hover {
+    color: white;
+}
+
+.navbar-default .navbar-nav a {
+    font-weight: bold;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -27,45 +92,23 @@ body {
     background: transparent;
 }
 
-.navbar .navbar-brand:hover {
-    color: white;
-
-}
-
-.navbar-default .navbar-nav>li>a {
-    font-weight: bold;
-}
-
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
     color: white;
 }
-/* Containers */
 
-.alert-container {}
-
-.callout-container {
-    height: 100vh;
-
-    background: url(../images/wd.PNG) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    display: flex;
-    align-items: center;
-    margin 0;
-
+.navbar-btn {
+    border: 0;
+    border-radius: 16px;
+    width: 100px;
+    background-color: #f05f40;
+    color: white;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5)
+.navbar-btn:hover {
+    background-color: #df4929;
+    border-color: #df4929;
+    color: white;
 }
 
 /* Jumbotron */
@@ -77,34 +120,40 @@ body {
 .jumbotron h1 {
     color: white;
     font-weight: bold;
-}
-
-.lead {
+    margin-bottom: 30px;
     color: white;
 }
 
-
-p>small {
+.jumbotron .lead {
     color: white;
     margin: 25px 0;
-    font-style: italic;
 }
 
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: #d0d0d0;
+}
 
-
-.quotes-container {}
-
-.features-container {}
-
-
-
-/* block dividers */
+/* Block dividers */
 
 .block-divider {
-    background-color: #ffa500;
-    width: 30%;
-    height: 3px;
-    border-radius: 10px;
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #444;
+}
+
+.block-divider--orange {
+    background-color: #f05f40;
+}
+
+.block-divider--white {
+    background-color: white;
+}
+
+.block-divider--short {
+    width: 35px;
 }
 
 /* Buttons */
@@ -117,16 +166,15 @@ p>small {
 
 .btn--red {
     color: white;
-    background-color: #ffa500;
-    border-color: #ffa500;
+    background-color: #f05f40;
+    border-color: #f05f40;
 }
 
 .btn--red:hover,
 .btn--red:active,
 .btn--red:focus,
 .btn--red:active:focus {
-    color: #ffa500;
-    background-color: #f0e68c;
-    border-color: #f0e68c;
-
+    background-color: #df4929;
+    border-color: #df4929;
+    color: white;
 }
