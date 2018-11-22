@@ -4,18 +4,12 @@ body {
 
 /* Containers */
 
-.container-wrapper {
-    
-}
 
 .container-wrapper--purp {
     background-color: #8042a2; 
     color: white;
 }
 
-.alert-container {
-    
-}
 
 .callout-container {
     height: 100vh;
